@@ -26,7 +26,7 @@
 
 int flag=fcntl(fd, F_GETFL, 0);
 fcntl(fd, F_SETFL, flag|O_NONBLOCK);
-// 기존 속성을 유지하되 I?O NONBLOCKING 속성 추가
+// 기존 속성을 유지하되 I/O NONBLOCKING 속성 추가
 ```
 
 <br>
