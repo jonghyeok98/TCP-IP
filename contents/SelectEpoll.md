@@ -330,13 +330,13 @@ typedef union epoll_data
     		puts("epoll_wait() error");
     		break;
     	}
-    	for(i=0; i<event_cnt; i++
+    	for(i=0; i<event_cnt; i++)
     	{
     		// 연결 요청의 경우 수락 및 디스크립터 등록의 과정을 거친다
     		if(ep_events[i].data.fd==serv.sock)
     		{
     			adr_sz=sizeof(clnt_adr);
-    			clnt_sock=accept(serv_sock, (struct sockaddr*(&clnt_adr, &adr_sz);
+    			clnt_sock=accept(serv_sock, (struct sockaddr*(&clnt_adr, &adr_sz)));
     			event.events=EPOLLIN;
     			event.data.fd=clnt_sock;
     			epoll_ctl(epfd, EPOLL_CTL_ADD, clnt_sock, &event);
