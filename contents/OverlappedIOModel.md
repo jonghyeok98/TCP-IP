@@ -10,7 +10,7 @@
 
 <br>
 
-<img src="">
+<img src="./images/Overlapped/Overlapped.png" width = 600>
 
 - 스레드의 관점에서 동시에 둘 이상의 데이터 전송을 중첩시키는 것을 뜻한다
 - 데이터 전송을 중첩시키기 위해서는 non-blocking 모드로 동작해야 한다
